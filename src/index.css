@@ -6,3 +6,10 @@ body{
 font-family: "poppins",sans-serif;
 background-color: white;
 }
+
+.active-link{
+    border:1px solid rgb(182, 3, 107);
+    border-radius:10px;
+    padding:1px 4px 1px 4px;
+    text-decoration: none;
+}

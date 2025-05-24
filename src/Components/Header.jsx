@@ -7,7 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export default function Welcome(props) {
   const [menu, setMenu] = useState(false);
@@ -26,42 +26,44 @@ export default function Welcome(props) {
         <div className={`${props.icon?"text-white":"text-black"}  hidden  md:flex space-x-10 items-center pr-10` }>
          
        <div className="group" > 
-        <Link to ="/" className="group-hover:text-gray-800" >Home</Link>
+        <NavLink to ="/" className={({isActive})=>`group-hover:text-pink-700  text-pink-700 ${isActive?"active-link":""}`} >Home</NavLink>
         
             
-            <div className="hidden w-full h-0.5 bg-gray-700 group-hover:block"></div>
+            <div className="hidden w-full h-0.5 bg-pink-700 group-hover:block"></div>
           </div>
 
        <div className="group">
-            <Link to="/about" className="group-hover:text-gray-800">
+            <NavLink to="/about" className={({isActive})=>`group-hover:text-pink-700 text-pink-700 ${isActive?"active-link":""}`}>
               About
-            </Link>
+            </NavLink>
             
-            <div className=" hidden w-full h-0.5 bg-gray-700 group-hover:block"></div>
+            <div className=" hidden w-full h-0.5 bg-pink-700 group-hover:block"></div>
           </div>
 
         <div className="group">
-            <Link to="/experience" className="group-hover:text-gray-800">
+            <NavLink to="/experience" className={({isActive})=>`group-hover:text-pink-700 text-pink-700 ${isActive?"active-link":""}`}>
              Experience
-            </Link>
+            </NavLink>
             
-            <div className="hidden w-full h-0.5 bg-gray-700 group-hover:block"></div>
+            <div className="hidden w-full h-0.5 bg-pink-700 group-hover:block"></div>
           </div>
 
           <div className="group">
-            <Link to="/projects" className="group-hover:text-gray-800">
+            <NavLink to="/projects" className={({isActive})=>`group-hover:text-pink-700 text-pink-700 ${isActive?"active-link":""}`}>
               Projects
-            </Link>
+            </NavLink>
           
-            <div className="hidden w-full h-0.5 bg-gray-700 group-hover:block "></div>
+            <div className="hidden w-full h-0.5 bg-pink-700 group-hover:block "></div>
           </div>
 
         <div className="group">
-            <Link to="/contact" className="group-hover:text-gray-800">
+            <NavLink to="/contact"  className={({ isActive }) =>
+    `group-hover:text-pink-700 text-pink-700 ${isActive ? 'active-link' : ''}`
+  } >
              Contact
-            </Link>
+            </NavLink>
            
-            <div className="hidden w-full h-0.5 bg-gray-700 group-hover:block "></div>
+            <div className="hidden w-full h-0.5 bg-pink-700 group-hover:block "></div>
           </div>
           
         </div>
