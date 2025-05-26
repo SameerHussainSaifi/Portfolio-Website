@@ -3,7 +3,7 @@ import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 function Navbar() {
   return (
-    <div>
+    <div >
       <Header/>
       <Footer/>
     </div>

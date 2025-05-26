@@ -4,9 +4,8 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+
 import Navbar from "./Components/Navbar.jsx";
-import Welcome from "./Components/Header";
-import TopSection from "./Components/TopSection";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Experience from "./Components/Experience";
@@ -14,16 +13,13 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 
 // Shared Layout
-function Layout({ icon, setIcon }) {
+function Layout() {
   return (
     <>
      
-      <Navbar icon={icon} setIcon={setIcon} />
-      {/* <TopSection /> */}
-      {/* <div className="p-2 text-center bg-gray-100">
-  Current icon state: {icon ? "🌞 Light" : "🌙 Dark"}
-</div> */}
+      <Navbar />
       <Outlet />
+      
     </>
   );
 
@@ -32,12 +28,12 @@ function Layout({ icon, setIcon }) {
 }
 
 export default function App() {
-  const [icon, setIcon] = useState(false);
+  // const [icon, setIcon] = useState(false);
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout icon={icon} setIcon={setIcon} />,
+      element: <Layout  />,
       children: [
         {index:true , element: <Home /> },
         { path: "about", element: <About /> },

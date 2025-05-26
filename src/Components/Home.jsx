@@ -2,8 +2,35 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>  
-     <p> home page</p>
+    <div className="overflow-x-hidden ">  
+      <div className="flex   md:mt-30 flex-col space-y-1 md:ml-35">
+        <h1 className=" text-xl font-semibold">Hello, It's Me</h1>
+     <h1 className="text-2xl font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-pink-500  via-purple-500 to-orange-500 scratch-font">SAMEER HUSSAIN</h1>
+      </div>
+     <div className="flex   justify-center items-center md:mt-10 ">
+     
+     <div className="w-7/12 text-justify md:mr-10  text-xl leading-relaxed">
+     <p>Inspired by the challenge of turning concepts into impactful software solutions, I am seeking a challenging and growth-oriented role in a dynamic organization where I can contribute through my technical skills, dedication, and continuous learning mindset. I aim to join a forward-thinking team where my academic background and project experience can deliver meaningful outcomes and support the organization’s success. My goal is to grow both personally and professionally while actively contributing to innovative and impactful solutions.</p>
+    </div>
+  
+    <div >
+     <img src="./src/assets/my.jpg" alt=""  className="w-80 h-80 rounded-full"/>
+    </div>
+    </div>
+
+     <div className="flex md:space-x-7 md:ml-35  ">
+<button className="bg-gradient-to-r from-pink-500 to-orange-500 h-12 w-12 rounded-full hover:from-white hover:to-white transition-all duration-300 hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-linkedin-in hover:text-pink-700 text-2xl font-semibold"></i></button>
+
+<button className="h-12 w-12 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full hover:from-white hover:to-white transition-all duration-300  hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-square-instagram text-2xl font-semibold"></i></button>
+
+<button className="h-12 w-12 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-white hover:to-white transition-all duration-300  hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-x-twitter  text-2xl font-semibold"></i></button>
+
+<button className="h-12 w-12 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-white hover:to-white transition-all duration-300 hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-facebook-f text-2xl font-semibold"></i></button>
+
+     </div>
+     <div className="relative top-10 md:left-35">
+      <button className="bg-gradient-to-r from-pink-500 to-orange-500  text-2xl  rounded-lg px-3 py-2">Download CV</button>
+     </div>
     </div>
   )
 }
