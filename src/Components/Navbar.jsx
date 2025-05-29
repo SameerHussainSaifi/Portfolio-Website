@@ -1,10 +1,10 @@
-import React from 'react'
+
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-function Navbar() {
+function Navbar({icon,setIcon} ) {
   return (
     <div >
-      <Header/>
+      <Header icon={icon} setIcon={setIcon}/>
       <Footer/>
     </div>
   )

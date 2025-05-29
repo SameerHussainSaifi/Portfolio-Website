@@ -8,11 +8,13 @@ background-color: white;
 }
 
 .active-link{
-   
-    
-   color:rgb(198, 25, 25)
+    background-image: linear-gradient(to right, red, orange); /* green to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For Firefox and broader support */
+  background-clip: text;
+  color: transparent;
 }
-.scratch-font {
-      font-family: 'Permanent Marker', cursive;
-    }
+
  

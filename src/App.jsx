@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,6 +11,7 @@ import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Header from "./Components/Header";
 
 // Shared Layout
 function Layout() {
@@ -18,6 +19,7 @@ function Layout() {
     <>
      
       <Navbar />
+      {/* <Header icon={icon} setIcon={setIcon}/> */}
       <Outlet />
       
     </>
@@ -28,7 +30,11 @@ function Layout() {
 }
 
 export default function App() {
-  // const [icon, setIcon] = useState(false);
+//   const [icon, setIcon] = useState(false);
+
+//   useEffect(() => {
+//   document.body.className = icon ? "dark-mode" : "light-mode";
+// }, [icon]);
 
   const router = createBrowserRouter([
     {
