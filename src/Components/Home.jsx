@@ -1,4 +1,5 @@
 import React from 'react'
+import {Outlet} from "react";
 import {ReactTyped} from "react-typed";
 function Home() {
   return (
@@ -6,7 +7,7 @@ function Home() {
     
       <div className="flex   md:mt-30 flex-col space-y-1 md:ml-35">
         <h1 className=" text-3xl font-semibold">Hello, It's Me</h1>
-     <h1 className=" text-5xl font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500 ">SAMEER HUSSAIN</h1>
+     <span className="  text-5xl font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 ">SAMEER HUSSAIN</span>
 
 <div className="  md:mt-5 flex space-x-2 text-2xl">
   <h1>And I am a</h1>
@@ -46,6 +47,7 @@ function Home() {
      <div className="relative  md:left-35 md:bottom-3">
       <button className="bg-gradient-to-r from-pink-500 to-orange-500  text-2xl  rounded-lg px-3 py-2">Download CV</button>
      </div>
+    
     </div>
   )
 }

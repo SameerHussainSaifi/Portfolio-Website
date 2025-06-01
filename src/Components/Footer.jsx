@@ -7,7 +7,7 @@ function Footer() {
      {/* <div className="fixed bottom-0 container flex  w-full justify-center h-16 shadow-lg max-w-screen-3xl "> */}
  
  
- <div className="  fixed bottom-0 flex  space-x-7 w-full justify-center h-16 shadow-lg max-w-screen-3xl  bg-slate-700 items-center">
+ <div className="  flex  space-x-7 w-full justify-center h-20 shadow-lg max-w-screen-3xl  bg-slate-700 items-center">
     <div className="text-orange-500 font-medium text-lg">
     <h1>Let's Connect</h1>
     </div>

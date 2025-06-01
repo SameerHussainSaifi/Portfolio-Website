@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
-  Outlet
+ 
 } from "react-router-dom";
 
 import Navbar from "./Components/Navbar.jsx";
@@ -12,15 +12,16 @@ import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Header from "./Components/Header";
-
+import notFound from "./Components/NotFound";
 // Shared Layout
 function Layout() {
   return (
     <>
      
       <Navbar />
+      {/* <Header/> */}
       {/* <Header icon={icon} setIcon={setIcon}/> */}
-      <Outlet />
+      {/* <Outlet /> */}
       
     </>
   );
@@ -46,9 +47,11 @@ export default function App() {
         { path: "experience", element: <Experience /> },
         { path: "projects", element: <Projects /> },
         { path: "contact", element: <Contact /> },
+        {path: "*", element:<notFound/>}
       ]
     }
   ]);
 
   return <RouterProvider router={router} />;
 }
+
