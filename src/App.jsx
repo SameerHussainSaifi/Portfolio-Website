@@ -19,9 +19,7 @@ function Layout() {
     <>
      
       <Navbar />
-      {/* <Header/> */}
-      {/* <Header icon={icon} setIcon={setIcon}/> */}
-      {/* <Outlet /> */}
+      
       
     </>
   );
@@ -31,11 +29,7 @@ function Layout() {
 }
 
 export default function App() {
-//   const [icon, setIcon] = useState(false);
 
-//   useEffect(() => {
-//   document.body.className = icon ? "dark-mode" : "light-mode";
-// }, [icon]);
 
   const router = createBrowserRouter([
     {

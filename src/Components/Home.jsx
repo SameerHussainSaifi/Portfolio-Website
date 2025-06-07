@@ -1,6 +1,9 @@
 import React from 'react'
 import {Outlet} from "react";
 import {ReactTyped} from "react-typed";
+import { SiMongodb } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
 function Home() {
   return (
     <div className="overflow-x-hidden container">  
@@ -33,8 +36,9 @@ function Home() {
      <img src="./src/assets/my.jpg" alt=""  className="w-80 h-80 rounded-full"/>
     </div>
     </div>
-
-     <div className=" relative flex md:space-x-7 md:ml-35  md:bottom-12">
+<div className="flex justify-between w-8/12">
+<div className="flex  flex-col ml-35 space-y-0 mb-50">
+     <div className=" relative flex md:space-x-7   md:bottom-10 ">
 <button className="bg-gradient-to-r from-pink-500 to-orange-500 h-12 w-12 rounded-full hover:from-white hover:to-white transition-all duration-300 hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-linkedin-in hover:text-pink-700 text-2xl font-semibold"></i></button>
 
 <button className="h-12 w-12 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full hover:from-white hover:to-white transition-all duration-300  hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-square-instagram text-2xl font-semibold"></i></button>
@@ -43,11 +47,24 @@ function Home() {
 
 <button className="h-12 w-12 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-white hover:to-white transition-all duration-300 hover:text-pink-700 cursor-pointer"><i className="fa-brands fa-facebook-f text-2xl font-semibold"></i></button>
 
-     </div>
-     <div className="relative  md:left-35 md:bottom-3">
+
+</div>
+     
+     <div className="flex justify-center">
       <button className="bg-gradient-to-r from-pink-500 to-orange-500  text-2xl  rounded-lg px-3 py-2">Download CV</button>
      </div>
-    
+    </div>
+
+   <div className="flex flex-col space-y-3 ">
+ <h1 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">Currently Working On</h1>
+    <div className="flex space-x-5 justify-center">
+      <div className="text-green-700"><SiMongodb  size={30} /></div>
+      <div className="text-green-700"><FaNodeJs size={30}/></div>
+      <div className="text-green-700"><SiExpress size={30} /></div>
+    </div>
+     </div>
+</div>
+
     </div>
   )
 }
