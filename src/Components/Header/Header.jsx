@@ -2,7 +2,7 @@ import {useState,useEffect} from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import {Link, NavLink} from "react-router-dom";
-import Mode from "./Mode.jsx";
+import Mode from "../Mode/Mode.jsx";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);

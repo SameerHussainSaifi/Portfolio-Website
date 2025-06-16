@@ -5,14 +5,14 @@ import {
  
 } from "react-router-dom";
 
-import Navbar from "./Components/Navbar.jsx";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Experience from "./Components/Experience";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import Header from "./Components/Header";
-import notFound from "./Components/NotFound";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import Home from "./Components/Home/Home.jsx";
+import About from "./Components/About/About.jsx";
+import Experience from "./Components/Experience/Experience.jsx";
+import Projects from "./Components/Projects/Projects.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
+import Header from "./Components/Header/Header.jsx";
+import notFound from "./Components/NotFound/NotFound.jsx";
 // Shared Layout
 function Layout() {
   return (
