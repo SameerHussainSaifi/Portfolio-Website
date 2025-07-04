@@ -1,3 +1,4 @@
+import {HashLink} from 'react-router-hash-link';
 import {useState,useEffect} from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
@@ -8,8 +9,9 @@ export default function Header() {
   const [menu, setMenu] = useState(false);
 const[icon,setIcon]=useState(true);
 
+
 useEffect(()=>{
-  {icon?document.body.style.backgroundColor="white":document.body.style.backgroundColor="black";}
+  {icon?document.body.style.backgroundColor="white":document.body.style.backgroundColor="	#1E1E1E";}
   {icon?document.body.style.color="black":document.body.style.color="white"}
     
 },[icon]);
@@ -19,7 +21,7 @@ useEffect(()=>{
      
      <div className="">
       {/* <div className={`${icon?"bg-black":"bg-white"} container w-full  flex justify-between items-center mx-auto max-w-screen-2xl  shadow-lg h-20 fixed`}> */}
-      <div className={`${icon ? "bg-white && text-black" : "bg-black && text-white"} w-full flex justify-between items-center mx-auto max-w-screen-2xl shadow-lg h-20 fixed z-50 `}>
+      <div className={`${icon ? "bg-white && text-black" : "			bg-black && text-white"} w-full flex justify-between items-center mx-auto max-w-screen-2xl shadow-lg h-20 fixed z-50 `}>
 
         <div className="flex items-center pl-5 flex-col">
           <h1 className=" font-semibold text-2xl md:ml-30 text-transparent bg-clip-text bg-gradient-to-r from-red-500  to-orange-500">Sameer </h1>
@@ -34,7 +36,7 @@ useEffect(()=>{
           </div>
 
        <div className="group">
-            <NavLink to="/about" className={({isActive})=>`  ${isActive?"active-link":""}`}>
+            <NavLink  id="about" to="/about" className={({isActive})=>`  ${isActive?"active-link":""}`}>
               About
             </NavLink>
             
@@ -42,7 +44,7 @@ useEffect(()=>{
           </div>
 
         <div className="group">
-            <NavLink to="/experience" className={({isActive})=>` ${isActive?"active-link":""}`}>
+            <NavLink id="experience" to="/experience" className={({isActive})=>` ${isActive?"active-link":""}`}>
              Experience
             </NavLink>
             
@@ -50,7 +52,7 @@ useEffect(()=>{
           </div>
 
           <div className="group">
-            <NavLink to="/projects" className={({isActive})=>`${isActive?"active-link":""}`}>
+            <NavLink id="projects" to="/projects" className={({isActive})=>`${isActive?"active-link":""}`}>
               Projects
             </NavLink>
           
@@ -58,7 +60,7 @@ useEffect(()=>{
           </div>
 
         <div className="group">
-            <NavLink to="/contact"  className={({ isActive }) =>
+            <NavLink  id="contact" to="/contact"  className={({ isActive }) =>
     `  ${isActive ? 'active-link' : ''}`
   } >
              Contact
@@ -80,15 +82,15 @@ useEffect(()=>{
          {/* phone */}
          {menu && (
 <div className="h-screen flex flex-col items-center justify-center text-lg fixed w-full md:hidden"> 
-                <Link to="/">Home</Link>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/experience">Experience</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+                <HashLink  to="/">Home</HashLink>
+            <HashLink smooth to="/#about">About</HashLink>
+            <HashLink smooth to="/#experience">Experience</HashLink>
+            <HashLink smooth to="/#projects">Projects</HashLink>
+            <HashLink smooth to="/#contact">Contact</HashLink>
         </div>
          )}
         
-
+ 
         </div>
 
         
