@@ -1,5 +1,6 @@
 import React from 'react'
 import {ReactTyped} from "react-typed";
+import homeImage from '/src/assets/my.jpg';
 function ParaHome() {
   return (
     <>
@@ -24,7 +25,7 @@ function ParaHome() {
      
     
     </div>
-    <div className="w-7/12"><img src="./src/assets/my.jpg" alt=""  className="h-100 w-100 rounded-full border-2 border-orange-500"/></div>
+    <div className="w-7/12"><img src={homeImage} alt="Home page Image"  className="h-100 w-100 rounded-full border-2 border-orange-500"/> </div>
    </div>
     </>
   )
