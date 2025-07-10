@@ -7,8 +7,15 @@ function Deployment() {
         <div><IoMdCloudOutline className="text-orange-500" size={50}/></div>
         <div className="text-3xl font-semibold"><h1>Cloud & Deployment</h1></div>
         <div className="flex space-x-3 ">
-          <div className=" rounded-full bg-gray-200  px-2">Netlify</div>
-          <div className="rounded-full bg-gray-200  px-2">Vercel</div>
+         
+          <div className=" rounded-full bg-gray-200  px-2">
+            <a href="https://vercel.com/sameer-hussains-projects-96893a4f" target='_main'>Vercel</a>
+            </div>
+
+          <div className="rounded-full bg-gray-200  px-2">
+            <a href="https://app.netlify.com/teams/sameerhussainsaifi/projects" target='_main'>Netlify</a>
+          </div>
+
         </div>
         </div>
         </>
